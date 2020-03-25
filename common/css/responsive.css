@@ -1,0 +1,51 @@
+img { max-width: 100%; height: auto; width: auto\9; /* ie8 */ }
+
+@media only screen and (min-width: 1024px) and (max-width: 1270px) { /* Home page css....*/
+  .hdr_main .logo { left: 20px; }
+  .set_lftcont { width: 40%; }
+  .set_lftcont .sec_lftinr { padding: 80px 20px 20px; }
+  .lftsechd { font-size: 42px; line-height: 36px; margin-top: 0px; }
+  .set_lftcont .lft_sectxt1 { font-size: 18px; line-height: 22px; padding-top: 18px; width: 94%; }
+  .hom_sec3_lftcont { width: 256px; left: 20px; }
+  .hom_sec3_tabcont .tab_cont { top: 190px; }
+  .hom_sec4 .sec4_lftcont { width: 300px; margin-left: -450px; }
+  .hom_sec4 .sec4_lftcont .hd { font-size: 30px; line-height: 28px; }
+  .hom_sec4 .sec4_lftcont p { font-size: 20px; }
+  .hom_sec4 .sec4_video_mian { width: 542px; height: 280px; margin-top: -140px; } }
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { .blockScreen { display: block; } }
+
+@media only screen and (max-width: 479px) { .hdr_main .logo { left: 10px; background-size: 100%; width: 90px; top: 8px; height: 28px; }
+  .menubtn { width: 34px; height: 34px; top: 7px; right: 10px; padding: 7px; }
+  .menubtn .lines { width: 20px; height: 2px; margin-top: 9px; }
+  .menubtn .lines:before, .lines:after { height: 2px; width: 20px; }
+  .menubtn .lines:before { top: 5px; }
+  .menubtn .lines:after { top: -5px; }
+  .menubtn:hover .lines:before { top: 6px; }
+  .menubtn:hover .lines:after { top: -6px; }
+  .menubtn.open .lines::before, .menubtn.open .lines::after { top: 0; transform-origin: 50% 50% 0; width: 20px; }
+  .nav_nner { left: 50vw; top: 0; position: fixed; right: inherit; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+  .js-nav-active .nav_nner { height: 184.9vh; padding-top: 92.5vh; width: 164.9vh; }
+  .nav_content { display: block; display: block; flex: 0 0 auto; height: auto; left: -46vw; padding: 8px 0 0; position: relative; width: 92vw; margin-right: 0; margin-left: 50%; }
+  .social_lst { float: left; width: auto; }
+  .main_nav { display: block; float: left; width: 100%; text-align: left; }
+  .main_nav > li { margin-bottom: 12px; overflow: hidden; }
+  .main_nav-item { font-size: 18px; }
+  .main_nav-sub { width: 100%; float: left; margin-top: 8px; padding: 0; }
+  .main_nav-sub > li { display: inline-block; margin-bottom: 5px; margin-right: 12px; font-size: 13px; float: none; background: none; padding: 0; }
+  .main_nav-sub > li:first-child { margin: 0; margin-right: 8px; padding: 0; }
+  #fp-nav.right { right: -1px; }
+  .circle_rit { height: 180vw; left: 50%; margin-left: -90vw; top: 0; width: 180vw; z-index: 2; margin-top: -120vw; }
+  .circle_slides .circle_slide_img { left: 0; margin-top: 0; top: 62%; width: 100%; }
+  .set_lftcont { width: 100%; height: 64vh; margin-top: 46vh; }
+  .set_lftcont .sec_lftinr { padding: 0 25px 10px 10px; }
+  .lftsechd { font-size: 23px; line-height: 22px; margin: 0; }
+  .lftsechd br { display: none; }
+  .set_lftcont .lft_sectxt1 { font-size: 13px; line-height: 18px; padding-top: 8px; width: 100%; }
+  .set_lftcont .suncr_non1 { font-size: 16px; padding-top: 9px; }
+  .set_lftcont .makinthbt { font-size: 17px; line-height: 20px; }
+  .btn1 { font-size: 14px; padding: 3px 15px 4px; }
+  .set_lftcont .btn1 { margin: 15px 0 0; }
+  .hom_sec3 .circle_rit { display: none; } }
+
+/*# sourceMappingURL=responsive.css.map */

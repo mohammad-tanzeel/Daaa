@@ -1,0 +1,37 @@
+<?php
+$remote_addr = $_SERVER['REMOTE_ADDR'];
+
+if($remote_addr == '127.0.0.1'){
+  $con = mysql_connect("localhost", "root", "zakir1991");
+  if (!$con){
+    die('Could not connect: ' . mysql_error());
+  }
+  $db_selected = mysql_select_db("suncros", $con);
+    if (!$db_selected){
+    die ('Can\'t use eon database : ' . mysql_error());
+  }
+}
+else if($remote_addr == '111.93.246.106'){
+  $con = mysql_connect("127.0.0.1", "suncros", "Kvf6y7Tt9HUr5tZP");
+  
+  if (!$con){
+    die('Could not connect: ' . mysql_error());
+  }
+  $db_selected = mysql_select_db("db_eon", $con);
+    if (!$db_selected){
+    die ('Can\'t use eon database : ' . mysql_error());
+  }
+}
+
+else{
+  $link = mysql_connect('localhost', 'root', 'rnf@1123');
+  if (!$link) {
+    die('Not connected : ' . mysql_error());
+  }
+
+  $db_selected = mysql_select_db('suncros', $link);
+  if (!$db_selected) {
+    die ('Can\'t use foo : ' . mysql_error());
+  }
+}
+?>

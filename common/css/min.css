@@ -1,0 +1,140 @@
+
+/* ------------------Reset--------------------- */
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,tbody,tfoot,thead,th,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0px;}
+
+/* -------------------------------------------- */
+
+
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+/*
+	TODO Figure out where this list-style rule is best set. Hedger has a request to investigate.
+*/
+li {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+	vertical-align:top;
+}
+sub {
+	vertical-align:bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+	*font-size:100%;
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+
+p, ul, li, h1, h2, h3, h4, h5, h6{ margin:0px; padding:0px;}
+
+a{
+outline: 0;
+text-decoration: underline;
+-moz-outline: none;
+}
+a:hover{
+ text-decoration: none;
+ cursor: pointer;
+ }
+a.nounderline, a:link.nounderline, a:visited.nounderline, a:active.nounderline{
+ text-decoration: none;
+ }
+a:hover.nounderline{
+ text-decoration: underline;
+ }
+a img{
+border: none;
+text-decoration: none;
+}
+img{
+border: none;
+text-decoration: none;
+}
+label, button {
+cursor: pointer;
+}
+
+input:focus, select:focus, textarea:focus {
+outline: none;
+}
+select::-moz-focus-inner { border: 0; outline: 0 }
+option::-moz-focus-inner { border: 0; outline: 0 }
+
+/*for FireFox*/
+    input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner
+    {   
+        border : 0px; 
+    } 
+/*for IE8 */
+    input[type="submit"]:focus, input[type="button"]:focus
+    {     
+        outline : none; 
+    }
+.transparent {
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+        filter: alpha(opacity=0);
+        -moz-opacity:0.00;
+        -khtml-opacity: 0.00;
+        opacity: 0.00;
+}
+fieldset{
+border: none;
+}
+.fleft { float: left }
+.fright { float: right }
+.clear { clear: both; }
+.hide  { display:none }
+.hiden{ overflow: hidden;}
+*, *::after, *::before {
+    box-sizing: border-box;
+}

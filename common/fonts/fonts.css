@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'harabararegular';
+    src: url('harabara-webfont.woff2') format('woff2'),
+         url('harabara-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
